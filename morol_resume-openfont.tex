@@ -1,0 +1,242 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.0 (17/12/2020)
+%
+% Original author:
+% Zinnatul Islam (https://jinnatul.github.io/)
+%
+% Original repository:
+% https://github.com/jinnatul/Jinnatul-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Zinnatul}{Islam}{ 
+\href{https://github.com/jinnatul}{Github} |
+\href{https://www.linkedin.com/in/jinnatul-islam-morol-b07172143/}{Linkedin} |
+\href{https://jinnatul.github.io/}{Portfolio} |
+\href{mailto:morolswediu@gmail.com}{morolswediu@gmail.com}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.3\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education} 
+
+\subsection{Daffodil International University}
+\descript{BSc in Software Engineering}
+\location{Dec 2020 | Dhaka, BD}
+\location{CGPA: 3.83 / 4.0}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Technical Skills}
+\location{Proficient with:}
+Javascript(ES6) \textbullet{}   Node.js \textbullet{} MongoDB \\
+SQL Server \textbullet{} React \textbullet{} GraphQL \\ 
+Redis \textbullet{} Linux \textbullet{} Unit Testing \\
+HTML5 \textbullet{} Sass \textbullet{} CSS3 \textbullet{} Agile(Scrum) \\
+Docker \\
+\location{Familiar with:}
+C \textbullet{} C++ \textbullet{} .Net core \textbullet{} PHP \\
+ML \textbullet{} Matlab \textbullet{} MySQL \textbullet{} PostgreSQL\\
+\sectionsep
+
+\subsection{Soft Skills}
+\location{Outstanding:}
+Communication (Bangla, English) \\
+Motivator \\
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Links} 
+\href{https://github.com/jinnatul}{Github} \\
+\href{https://www.linkedin.com/in/jinnatul-islam-morol-b07172143/}{Linkedin} \\
+\href{https://twitter.com/jinnatul_md}{Twitter} \\
+\href{https://twitter.com/morolswediu}{Twitter-Bot} \\
+\href{https://dev.to/jinnatul}{Dev.to} \\
+\href{https://www.facebook.com/mdjinnatul.islam/}{Facebook} \\
+\href{https://www.youtube.com/channel/UCc9Bj9gAS0wWR0DCvkN3H5Q/videos?view_as=subscriber}{YouTube} \\
+\href{http://programming-jinnatul.blogspot.com/}{Programming-Blog} \\
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     WORK EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{WORK EXPERIENCE}
+\subsection{Daffodil International University}
+\descript{ Trainer, Programming Classes }
+\location{Jan 2019 - Mar 2020 | Dhaka, BD}
+Taking programming classes on basic topics
+of Data Structure and Algorithm (DIU-SWE).
+\sectionsep
+
+\subsection{Article Writing}
+\descript{ Writer, Programming content }
+\location{Jan 2018 - Present | Dhaka, BD}
+Already write 1500+ article on my \href{http://programming-jinnatul.blogspot.com/}{Programming-Blog} \\
+2M+ views on my article
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     TECHNICAL PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{TECHNICAL PROJECTS}
+\runsubsection{ Online Doctor chamber }
+\descript{| a project for \href{https://www.icddrb.org/}{icddr,b} }
+\location{Aug 2020 - Dec 2020 | Dhaka, BD}
+\vspace{\topsep}
+\begin{tightemize}
+\item Implement REST API using Express.js, MongoDB, Swagger doc.
+\item Unit testing using JEST 
+\item DevOps (Github CI/CD, Docker)
+\end{tightemize}
+\sectionsep
+
+\runsubsection{ Cuntato }
+\descript{\href{https://github.com/pro-js/cuntato}{[Github]}, \href{https://cuntato.herokuapp.com/}{[Website]}}
+\location{An easy and secured solution to get messages from contact form of static or dynamic websites }
+\location{Jul 2020 - Dec 2020 | Dhaka, BD}
+\vspace{\topsep}
+\begin{tightemize}
+\item Implement REST API using Express.js, MongoDB.
+\item DevOps (Github CI/CD)
+\end{tightemize}
+\sectionsep
+
+\runsubsection{ Minisauras }
+\descript{\href{https://github.com/TeamTigers/minisauras}{[Github]}, \href{https://github.com/marketplace/actions/minisauras}{[Marketplace]}}
+\location{ An open-source CI/CD automation tool based on Octocat. GitHub Actions that pulls all the JavaScript and CSS files from your base branch, minify them and creates a pull-request with a new branch. }
+\location{Sep 2020 - Oct 2020 | Dhaka, BD}
+\vspace{\topsep}
+\begin{tightemize}
+\item Implement a Github Action using Node.js and Octocat
+\item DevOps (Github CI/CD)
+\end{tightemize}
+\sectionsep
+
+\runsubsection{ Twitter-Bot }
+\descript{\href{https://github.com/jinnatul/twitter-bot}{[Github]}, \href{https://twitter.com/morolswediu}{[Account]}}
+\location{Twitter bot which will retweet, favorite / like, post, follow, unfollow people.}
+\location{Dec 2020 - Dec 2020 | Dhaka, BD}
+\vspace{\topsep}
+\begin{tightemize}
+\item Implement a Twitter Bot using Node.js and Twitter API.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{ Coronainfobd }
+\descript{\href{https://github.com/TeamTigers/coronainfobd}{[Github]}, \href{https://teamtigers.tech/coronainfobd/}{[Website]}}
+\location{Real-time corona-virus tracker of Bangladesh, which includes latest updates, data visualization, public awareness from WHO and some advice to aware people.}
+\location{May 2020 - Jun 2020 | Dhaka, BD}
+\vspace{\topsep}
+\begin{tightemize}
+\item Dynamically visualize case study
+\item Work on data visualization
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Research}
+\runsubsection{Food prediction based on mood}
+\descript{| Researcher | \href{https://www.kaggle.com/borapajo/food-choices}{[Data-Set]}}
+\location{Oct 2020 – Dec 2020 | Dhaka, BD}
+Given data about different people's food preferences, let's try to predict the food base on person mood. Create a Linear Regression model that can predict foods base on different criteria like Gender, Calories, Comfort food reasons, Weight.
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Awards} 
+\begin{tabular}{rll}
+2019	     & Gold level  & Problem Solving (\href{https://www.hackerrank.com/jinnatul}{HackerRank})\\
+\end{tabular}
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
