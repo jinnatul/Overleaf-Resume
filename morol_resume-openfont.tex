@@ -46,6 +46,7 @@
 
 
 \documentclass[]{deedy-resume-openfont}
+\usepackage{graphicx}
 \usepackage{fancyhdr}
  
 \pagestyle{fancy}
@@ -65,12 +66,23 @@
 %     TITLE NAME
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\namesection{Zinnatul}{Islam}{ 
-\href{https://github.com/jinnatul}{Github} |
-\href{https://www.linkedin.com/in/morol1957/}{Linkedin} |
-{+880 1793-696177} |
-\href{mailto:morolswediu@gmail.com}{morolswediu@gmail.com}
-}
+
+\begin{minipage}[t]{0.1\linewidth}
+    \vspace{0pt}
+    \raggedright
+    \includegraphics[width=\linewidth, height=\linewidth, trim=0 0 0 0]{1.png}
+    \label{fig:enter-label}
+\end{minipage}%
+\begin{minipage}[t]{0.7\linewidth}
+    \vspace{0pt}
+    \raggedright
+    \namesection{Zinnatul}{Islam}{ 
+        \href{https://github.com/jinnatul}{Github} |
+        \href{https://www.linkedin.com/in/morol1957/}{LinkedIn} |
+        {+880 1793-696177} |
+        \href{mailto:morolswediu@gmail.com}{morolswediu@gmail.com}
+    }
+\end{minipage}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
